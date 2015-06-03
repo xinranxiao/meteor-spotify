@@ -7,6 +7,8 @@ A oauth wrapper for Spotify on Meteor
 
 ## Usage
 
+Go to Spotify's website and register an application. For your redirect URL, enter: `<yourhostname>/_oauth/spotify?close`
+
 Configure the Spotify service (server-side):
 
 ```
