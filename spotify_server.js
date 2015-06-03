@@ -8,7 +8,7 @@ Spotify.whitelistedFields = ['display_name', 'email', 'id', 'uri', 'images'];
 OAuth.registerService('spotify', 2, null, function(query) {
   var response = getTokens(query);
   var refreshToken = response.refreshToken;
-  var identity = getIdentity(accessToken);
+  var identity = getIdentity(response.accessToken);
 
   // Set the service data.
   var serviceData = {
