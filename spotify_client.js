@@ -22,7 +22,7 @@ Spotify.requestCredential = function (options, credentialRequestCompleteCallback
   }
 
   // Force the user to approve the app every time (similar to Google's `approval_prompt`).
-  var showDialog = options.forceApprovalPrompt || false;
+  var showDialog = options.showDialog || false;
 
   // Figure out scopes.
   var requiredScope = ['user-read-email'];
