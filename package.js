@@ -15,7 +15,7 @@ Package.onUse(function(api) {
   api.use(['underscore', 'service-configuration'], ['client', 'server']);
   api.use(['random', 'templating'], 'client');
 
-  // TODO add variable export.
+  api.export('Spotify');
 
   api.addFiles(
     ['spotify_configure.html', 'spotify_configure.js'],

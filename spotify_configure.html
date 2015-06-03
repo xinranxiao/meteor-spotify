@@ -1,0 +1,13 @@
+<template name="configureLoginServiceDialogForSpotify">
+    <p>
+        First, you'll need to register your app on Spotify. Follow these steps:
+    </p>
+    <ol>
+        <li>
+            Visit <a href="https://developer.spotify.com/my-applications/#!/applications/create" target="_blank">https://developer.spotify.com/my-applications/#!/applications/create</a>
+        </li>
+        <li>
+            Towards the bottom of your application page, add a redirect URI as follows: <span class="url">{{siteUrl}}_oauth/spotify</span>
+        </li>
+    </ol>
+</template>
