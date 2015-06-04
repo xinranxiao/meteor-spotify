@@ -1,8 +1,7 @@
 # meteor-spotify
-A oauth wrapper for Spotify on Meteor
+An updated and maintained oauth wrapper for Spotify on Meteor.
 
 ## Installation
-* `meteor add service-configuration`
 * `meteor add xinranxiao:spotify`
 
 ## Usage
@@ -16,7 +15,7 @@ ServiceConfiguration.configurations.update(
   { "service": "spotify" },
   {
     $set: {
-      "clientId": "<your clientId",
+      "clientId": "<your clientId>",
       "secret": "<your secret>"
     }
   },
