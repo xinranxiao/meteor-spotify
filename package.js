@@ -1,6 +1,6 @@
 Package.describe({
   name: 'xinranxiao:spotify',
-  version: '1.0.1',
+  version: '1.0.2',
   summary: 'An updated and maintained oauth wrapper for Spotify on Meteor',
   git: 'https://github.com/xinranxiao/meteor-spotify.git',
   documentation: 'README.md'
