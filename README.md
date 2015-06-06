@@ -10,7 +10,7 @@ Go to Spotify's website and register an application. For your redirect URL, ente
 
 Configure the Spotify service (server-side):
 
-```
+```javascript
 ServiceConfiguration.configurations.update(
   { "service": "spotify" },
   {
@@ -25,7 +25,7 @@ ServiceConfiguration.configurations.update(
 
 This package can be used independently of `xinranxiao:accounts-spotify` if you just want to get the OAuth access token. Just run this (client-side):
 
-```
+```javascript
 var options = {
   showDialog: true, // Whether or not to force the user to approve the app again if they’ve already done so.
   requestPermissions: ['user-read-email'] // Spotify access scopes.
