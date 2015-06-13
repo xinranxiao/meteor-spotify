@@ -6,35 +6,7 @@ An updated and maintained oauth wrapper for Spotify on Meteor.
 
 ## Usage
 
-Go to Spotify's website and register an application. For your redirect URL, enter: `<yourhostname>/_oauth/spotify?close`
-
-Configure the Spotify service (server-side):
-
-```javascript
-ServiceConfiguration.configurations.update(
-  { "service": "spotify" },
-  {
-    $set: {
-      "clientId": "<your clientId>",
-      "secret": "<your secret>"
-    }
-  },
-  { upsert: true }
-);
-```
-
-This package can be used independently of `xinranxiao:accounts-spotify` if you just want to get the OAuth access token. Just run this (client-side):
-
-```javascript
-var options = {
-  showDialog: true, // Whether or not to force the user to approve the app again if they’ve already done so.
-  requestPermissions: ['user-read-email'] // Spotify access scopes.
-};
-
-Spotify.requestCredential(options, function(accessToken) {
-  console.log(accessToken);
-});
-```
+Use with [`xinranxiao:accounts-spotify`](https://github.com/xinranxiao/meteor-accounts-spotify) to simpleify Spotify OAuth flow and allow users to login with Spotify.
 
 ## Contribution
 
